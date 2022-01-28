@@ -79,6 +79,7 @@ a:hover {
 .searchResultCardsList {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 .searchResultCard {
