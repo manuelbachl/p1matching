@@ -1,0 +1,177 @@
+* {
+  box-sizing: border-box;
+}
+
+:host {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 14px;
+  color: #333;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 8px 0;
+  width: 100%;
+}
+
+h2 {
+  text-align: left;
+}
+
+h3 {
+  font-weight: bold;
+}
+
+p {
+  margin: 0;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.toolbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background-color: #e2014f;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.toolbar span {
+  display: inline-block;
+  margin: 0 0 0 16px;
+}
+
+.content {
+  display: flex;
+  margin: 82px auto 32px;
+  padding: 0 16px;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+a,
+a:visited,
+a:hover {
+  color: #1976d2;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #125699;
+}
+
+.searchResultCardsList {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.searchResultCard {
+  width: 98%;
+  margin: 0 1% 30px;
+}
+
+@media screen and (min-width: 481px) {
+  .searchResultCard {
+    width: 48%;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .searchResultCard {
+    width: 31%;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .searchResultCard {
+    width: 23%;
+  }
+}
+
+.match {
+  width: 46px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e2014f;
+  color: #ffffff;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.matchValue {
+  display: inline-block;
+  margin-top: 3px;
+  font-weight: bold;
+}
+
+.matchInfo {
+  font-size: 8px;
+}
+
+.property {
+  margin: 10px 0 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.property span {
+  color: #aaaaaa;
+}
+
+.property span.prioritized {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.property span:last-of-type {
+  min-width: 50px;
+  text-align: right;
+}
+
+.propertyWrapper {
+  margin-bottom: 20px;
+}
+
+.propertyWrapper:last-child {
+  margin-bottom: 0;
+}
+
+.mat-radio-group {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.mat-radio-button {
+  width: 100%;
+  margin: 0 0 10px 0;
+}
+
+.mat-radio-button .mat-radio-outer-circle {
+  border-color: #e2014f;
+}
+
+.mat-radio-button .mat-radio-inner-circle {
+  border-color: #e2014f;
+}
+
+.mat-progress-bar-fill::after {
+  background-color: #e2014f;
+}
